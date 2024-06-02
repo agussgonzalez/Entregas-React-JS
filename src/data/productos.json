@@ -1,0 +1,52 @@
+[
+      {
+        "id": "local1",
+        "nombre": "Camiseta local",
+        "categoria": "Local",
+        "precio": 29.99,
+        "descripcion": "Camiseta de local del equipo Midland",
+        "detalles": {
+          "talla": ["S", "M", "L", "XL"],
+          "color": ["Rojo", "Blanco"],
+          "material": "Algodón"
+        }
+      },
+      {
+        "id": "visitante1",
+        "nombre": "Camiseta visitante",
+        "categoria": "Visitante",
+        "precio": 29.99,
+        "descripcion": "Camiseta de visitante del equipo Midland",
+        "detalles": {
+          "talla": ["S", "M", "L", "XL"],
+          "color": ["Azul", "Negro"],
+          "material": "Algodón"
+        }
+      },
+      {
+        "id": "conjunto1",
+        "nombre": "Conjunto completo",
+        "categoria": "Conjunto completo",
+        "precio": 59.99,
+        "descripcion": "Conjunto completo del equipo Midland (camiseta local + camiseta visitante)",
+        "detalles": {
+          "talla": ["S", "M", "L", "XL"],
+          "color": ["Rojo/Azul"],
+          "material": "Algodón"
+        }
+      },
+      {
+        "id": "campera1",
+        "nombre": "Campera",
+        "categoria": "Campera",
+        "precio": 49.99,
+        "descripcion": "Campera del equipo Midland",
+        "detalles": {
+          "talla": ["S", "M", "L", "XL"],
+          "color": ["Negro", "Gris"],
+          "material": "Poliéster"
+        }
+      }
+    ]
+  
+  

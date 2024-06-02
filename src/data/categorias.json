@@ -1,0 +1,20 @@
+[
+      {
+        "id": "local",
+        "nombre": "Local"
+      },
+      {
+        "id": "visitante",
+        "nombre": "Visitante"
+      },
+      {
+        "id": "conjunto",
+        "nombre": "Conjunto completo"
+      },
+      {
+        "id": "campera",
+        "nombre": "Campera"
+      }
+    ]
+  
+  
