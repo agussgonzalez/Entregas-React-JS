@@ -1,19 +1,38 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import  data  from "../data/productos.json";
+import data from '../data/productos.json';
 
 const ItemDetailContainer = () => {
-
   let { itemId } = useParams();
   let [producto, setProducto] = useState(undefined);
 
   useEffect(() => {
-    setProducto(data.find((prod) => prod.id === parseInt(itemId)));
-  }, [itemId])
+    const selectedProduct = data.find(prod => prod.id === itemId);
+    setProducto(selectedProduct);
+  }, [itemId]);
+
+  console.log(producto);
 
   return (
-    <div>{producto ? producto.detalles : "Cargando..."}</div>
-  )
-}
+    <div className='div-product'>
+      {producto ? (
+        <div>
+          <h2>{producto.nombre}</h2>
+          <p>Categoría: {producto.categoria}</p>
+          <p>Precio: {producto.precio}</p>
+          <p>Descripción: {producto.descripcion}</p>
+          <p>Detalles:</p>
+          <ul>
+            <li>Talla: {producto.detalles.talla.join(', ')}</li>
+            <li>Color: {producto.detalles.color.join(', ')}</li>
+            <li>Material: {producto.detalles.material}</li>
+          </ul>
+        </div>
+      ) : (
+        'Cargando...'
+      )}
+    </div>
+  );
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

@@ -11,8 +11,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
-    padding: 1rem;
+    background-color: #a20606;
+    padding: 2rem;
     border: solid black 5px;
 }
 
@@ -35,13 +35,22 @@
 .nav-link {
     text-decoration: none;
     color: white;
-    background-color: black;
-    border-radius: 15%;
-    padding: 0.5rem;
+    padding: 1rem;
+    font-size: larger;
 }
+.nav-link:hover {
+    background-color: aliceblue;
+    color: #a20606;
+}
+
+
 .nav-link.active {
     font-weight: bold;
-    text-decoration: underline;
+    background-color: white;
+    color:#a20606 ;
+    border-radius: 1%;
+    text-transform: uppercase;
+
 }
 .carrito {
     font-size: 25px;
@@ -63,7 +72,7 @@
     margin: 5px;
     border: 2px solid black;
     color: black;
-    background-color:gold;
+    background-color:#a78c2a;
     font-size: 15px;
     font-weight: 15px;
     text-transform: uppercase;
@@ -73,7 +82,16 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+.detalles {
+    background-color: black;
+    color: #a20606;
+    margin-top: 2rem;
+}
 .footer{
     text-align: center;
     color: red;
+}
+.text {
+    text-align: center;
+    padding: 3rem;
 }

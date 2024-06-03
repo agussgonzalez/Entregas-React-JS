@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { categories } from "../../data/categorias.json"
+import  categories  from "../../data/categorias.json"
 export const NavBar = () => {
   return (
         <nav className='nav'>
