@@ -67,8 +67,8 @@
 }
 .div-product { 
     padding: 1.5rem;
-    width: 500px;
-    height: 450px;
+     width: 500px;
+    height: 450px; 
     margin: 5px;
     border: 2px solid black;
     color: black;
@@ -78,6 +78,12 @@
     text-transform: uppercase;
     text-align: center;
 }
+.img-cards{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
+
 .item-list-container {
     max-width: 1000px;
     margin: 0 auto;
