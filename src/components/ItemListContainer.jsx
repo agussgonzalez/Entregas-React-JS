@@ -31,7 +31,6 @@ export const ItemListContainer = () => {
             setTitulo(categoriaSeleccionada.nombre);
             setProductos(res.filter((prod) => prod.categoria === categoriaSeleccionada.nombre));
           } else {
-            // Si no se encuentra la categoría, podrías redirigir a una página de 404 o mostrar un mensaje de error.
             setTitulo("Productos");
             setProductos([]);
           }

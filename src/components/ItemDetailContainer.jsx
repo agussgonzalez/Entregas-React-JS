@@ -17,6 +17,7 @@ const ItemDetailContainer = () => {
     <div className='div-product'>
       {producto ? (
         <div>
+          <img className='img-cards' src={producto.imagen} alt="" />
           <h2>{producto.nombre}</h2>
           <p>Categoría: {producto.categoria}</p>
           <p>Precio: {producto.precio}</p>

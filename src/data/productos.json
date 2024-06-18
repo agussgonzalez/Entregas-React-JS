@@ -1,7 +1,8 @@
 [
       {
         "id": "local1",
-        "imagen":"https://i.imgur.com/LIaqArh.jpeg",
+        "imagen":[ "https://i.imgur.com/LIaqArh.jpeg",
+        "https://imgur.com/a/tgiE3Fb"],
         "nombre": "Camiseta local",
         "categoria": "Local",
         "precio": 29.99,

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Carrito } from './Carrito';
+import { CartWidget } from './CartWidget';
 import { NavBar } from './NavBar'
-import logo from'../img/logo.jpg'
+import logo from'../../../public/img/logo.jpg'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
         <Link to="/"> <h1 className='titulo'>Midland Shopping</h1> </Link>
 
         <NavBar />
-        <Carrito />
+        <CartWidget />
     </header>
   );
 ;}
