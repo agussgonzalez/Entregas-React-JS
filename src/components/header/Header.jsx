@@ -4,7 +4,7 @@ import { NavBar } from './NavBar'
 import logo from'../../../public/img/logo.jpg'
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+export const Header = () => {
   return (
     <header className='header'>
       <img className='logo' src={logo} alt="logo" />
@@ -15,5 +15,3 @@ const Header = () => {
     </header>
   );
 ;}
-
-export default Header;

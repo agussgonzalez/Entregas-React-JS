@@ -6,10 +6,10 @@
         "nombre": "Camiseta local",
         "categoria": "Local",
         "precio": 29.99,
-        "descripcion": "Camiseta de local del Club Deportivo Midland (CDM)",
+        "descripcion": "Camiseta local del Club Deportivo Midland (CDM)",
         "detalles": {
           "talla": ["S", "M", "L", "XL"],
-          "color": ["Rojo", "Blanco"],
+          "color": ["Negro"],
           "material": "Algodón"
         }
       },
@@ -19,10 +19,10 @@
         "nombre": "Camiseta visitante",
         "categoria": "Visitante",
         "precio": 29.99,
-        "descripcion": "Camiseta de visitante del Club Deportio Midland (CDM)",
+        "descripcion": "Camiseta visitante del Club Deportio Midland (CDM)",
         "detalles": {
           "talla": ["S", "M", "L", "XL"],
-          "color": ["Azul", "Negro"],
+          "color": "Blanco",
           "material": "Algodón"
         }
       },
@@ -35,7 +35,7 @@
         "descripcion": "Short unico del Club Deportivo Midland (CDM)",
         "detalles": {
           "talla": ["S", "M", "L", "XL"],
-          "color": ["Rojo/Azul"],
+          "color": "Negro",
           "material": "Algodón"
         }
       },

@@ -12,6 +12,7 @@ const {agregarAlCarrito} = useContext(CartContext);
         <h2>{producto.nombre}</h2>
         <p>${producto.precio}</p>
         <p>{producto.descripcion}</p>
+        {producto.categoria && <p>Categoría: {producto.categoria}</p>}
         <Link to={`/item/${producto.id}`}><p className='detalles'>Detalles</p></Link>
         <button onClick={() => agregarAlCarrito(producto)}>agregar al carrito</button>
     </div>

@@ -1,39 +1,38 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import data from '../data/productos.json';
+import { ItemDetail } from './ItemDetail';
+import { doc, getDoc } from "firebase/firestore";
+import { db } from '../firebase/config';
+
 
 const ItemDetailContainer = () => {
+
   let { itemId } = useParams();
   let [producto, setProducto] = useState(undefined);
+  let [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
-    const selectedProduct = data.find(prod => prod.id === itemId);
-    setProducto(selectedProduct);
+    const docRef = doc(db, "Productos", itemId);
+      getDoc(docRef)
+        .then(res => {
+          if (res.data()) {
+            setProducto( { ...res.data(), id: res.id } );
+          }
+          setLoading(false);
+        })
+
   }, [itemId]);
 
-  console.log(producto);
+  if (loading) {
+    return <div>Cargando...</div>
+  } else if (producto) {
+    return <ItemDetail producto={producto} />
+  } else {
+    return <div>Producto no encontrado</div>
+  }
+}
 
-  return (
-    <div className='div-product'>
-      {producto ? (
-        <div>
-          <img className='img-cards' src={producto.imagen} alt="" />
-          <h2>{producto.nombre}</h2>
-          <p>Categoría: {producto.categoria}</p>
-          <p>Precio: {producto.precio}</p>
-          <p>Descripción: {producto.descripcion}</p>
-          <p>Detalles:</p>
-          <ul>
-            <li>Talla: {producto.detalles.talla.join(', ')}</li>
-            <li>Color: {producto.detalles.color.join(', ')}</li>
-            <li>Material: {producto.detalles.material}</li>
-          </ul>
-        </div>
-      ) : (
-        'Cargando...'
-      )}
-    </div>
-  );
-};
+export default ItemDetailContainer
 
-export default ItemDetailContainer;
+ 

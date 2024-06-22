@@ -6,6 +6,7 @@
 
 :root {
     color-scheme: light dark;
+    min-height: 1000vh;
 }
 .header {
     background-color: #a20606;

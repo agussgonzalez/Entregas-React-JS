@@ -13,4 +13,3 @@ export const CartWidget = () => {
     </Link>
   )
 }
-export default CartWidget;
