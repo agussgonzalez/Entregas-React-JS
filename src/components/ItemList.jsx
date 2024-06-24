@@ -8,7 +8,7 @@ export const ItemList = ( {productos} ) => {
         {
             productos.length > 0 ?
             productos.map(producto => {
-                return <Item key={producto.id} producto={producto} />
+                return <Item key={producto.id} producto={producto} id={producto.id}/>
             })
             :<p>Cargando productos...</p>
         }

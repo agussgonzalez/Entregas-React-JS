@@ -39,7 +39,7 @@ export const Checkout = () => {
 
   return (
     <div>
-        <form onSubmit={handleSubmit(comprar)}>
+        <form className="formulario" onSubmit={handleSubmit(comprar)}>
             <input type="text" placeholder="Ingrese su nombre" {...register("nombre")} />
             <input type="email" placeholder="Ingrese su e-mail" {...register("email")} />
             <button type="submit">Comprar</button>

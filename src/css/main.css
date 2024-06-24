@@ -5,8 +5,10 @@
 }
 
 :root {
+    display: flex;
     color-scheme: light dark;
-    min-height: 1000vh;
+    min-width: 100%;
+    min-height: 100%;
 }
 .header {
     background-color: #a20606;
@@ -65,7 +67,7 @@
 }
 
 .div-container {
-    max-width: 100%;
+    width: 100%;
     margin: 1rem;
     padding: 1rem;
     display: flex;
@@ -119,4 +121,10 @@
 .detalles:hover {
     background-color: floralwhite;
     
+}
+.formulario {
+    background-color: #a78c2a;
+    display: flex;
+    min-height: 10vh;
+    padding: 5rem;
 }
